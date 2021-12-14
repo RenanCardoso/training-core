@@ -1,9 +1,4 @@
 # Training Core - Plataforma Web
-<h3>Trabalho de Conclusão de Curso<br>
-Aluno: Renan Cardoso<br>
-8° Semestre do curso de Ciência da Computação da UniFaccamp 
-</h3> 
-
 Plataforma utilizada para visualização, cadastro, atualização e remoção de alunos, instrutores, planos, aparelhos,
 ficha de treinos, exercícios e avaliação médica dos alunos e vínculo dos exercícios para com as fichas de treinos dos alunos.
 Também sendo a ferramenta utilizada para disponibilização das webservices para o aplicativo móvel  de acompanhamento
