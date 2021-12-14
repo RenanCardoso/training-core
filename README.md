@@ -13,7 +13,7 @@ Resumo. Este trabalho propõe o desenvolvimento de um sistema integrado e apoiad
 <h3>Instalação</h3> 
 
 <h3> 1. clone o repositório </h3>
-$ git clone https://github.com/RenanCardoso/training-core-painel my-project
+$ git clone https://github.com/RenanCardoso/training-core my-project
 
 <h3> 2. vá para o diretório do aplicativo </h3>
 $ cd my-project
