@@ -28,33 +28,6 @@ class RolesController extends Controller
         ));
     }
 
-    public function moveUp(Request $request){
-        $element = RoleHierarchy::where('role_id', '=', $request->input('id'))->first();
-        $switchElement = RoleHierarchy::where('hierarchy', '<', $element->hierarchy)
-            ->orderBy('hierarchy', 'desc')->first();
-        if(!empty($switchElement)){
-            $temp = $element->hierarchy;
-            $element->hierarchy = $switchElement->hierarchy;
-            $switchElement->hierarchy = $temp;
-            $element->save();
-            $switchElement->save();
-        }
-        return redirect()->route('roles.index');
-    }
-
-    public function moveDown(Request $request){
-        $element = RoleHierarchy::where('role_id', '=', $request->input('id'))->first();
-        $switchElement = RoleHierarchy::where('hierarchy', '>', $element->hierarchy)
-            ->orderBy('hierarchy', 'asc')->first();
-        if(!empty($switchElement)){
-            $temp = $element->hierarchy;
-            $element->hierarchy = $switchElement->hierarchy;
-            $switchElement->hierarchy = $temp;
-            $element->save();
-            $switchElement->save();
-        }
-        return redirect()->route('roles.index');
-    }
 
     /**
      * Show the form for creating a new resource.

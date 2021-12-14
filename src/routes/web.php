@@ -51,8 +51,6 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::resource('mail',        'MailController');
         Route::get('prepareSend/{id}',        'MailController@prepareSend')->name('prepareSend');
         Route::post('mailSend/{id}',        'MailController@send')->name('mailSend');
-        Route::get('/roles/move/move-up',      'RolesController@moveUp')->name('roles.up');
-        Route::get('/roles/move/move-down',    'RolesController@moveDown')->name('roles.down');
         Route::prefix('menu/element')->group(function () {
             Route::get('/',             'MenuElementController@index')->name('menu.index');
             Route::get('/move-up',      'MenuElementController@moveUp')->name('menu.up');
